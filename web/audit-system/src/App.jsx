@@ -5,7 +5,11 @@ import AuditList from './components/AuditList';
 import styles from './App.module.css';
 
 function App() {
-  const [user, setUser] = useState(null);
+  const [user, setUser] = useState(() => {
+    const username = localStorage.getItem('username');
+    const role = localStorage.getItem('role');
+    return username && role ? { username, role } : null;
+  });
 
   return (
     <BrowserRouter>

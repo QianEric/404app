@@ -86,7 +86,7 @@ const Login = () => {
       style={styles.container}
       behavior={Platform.OS === "ios" ? "padding" : undefined}
     >
-      <Text style={styles.title}>旅游日记平台</Text>
+      <Text style={styles.title}>信息安全AI交流平台</Text>
 
       <TextInput
         style={styles.input}
